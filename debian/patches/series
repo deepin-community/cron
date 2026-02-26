@@ -74,3 +74,4 @@ fixes/Check_for_timezone_changes.patch
 features/No-multiple-timezones.patch
 fixes/crontab_5_manpage.patch
 features/dry-run.patch
+CVE/CVE-2024-43688.patch

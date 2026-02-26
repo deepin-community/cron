@@ -1,3 +1,13 @@
+cron (3.0pl1-162deepin1) unstable; urgency=high
+
+  * Fix CVE-2024-43688: buffer underflow for very large step values.
+    In get_number(), reject values that are so large that they are
+    interpreted as negative numbers. This prevents bit_nset() from
+    being called with out-of-range values when processing crontab
+    entries with malicious step values.
+
+ -- hudeng <hudeng@deepin.org>  Wed, 26 Feb 2026 10:00:00 +0800
+
 cron (3.0pl1-162) unstable; urgency=medium
 
   * moved "Breaks: systemd-cron(<<1.15.19-5~)" to the package
